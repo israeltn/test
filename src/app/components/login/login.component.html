@@ -1,85 +1,86 @@
 <!-- BEGIN : Main Content-->
 <div class="main-content">
-  <div><!--Login Page Starts-->
-<section id="login">
-<div class="container-fluid pd-0">
-<div class="row full-height-vh m-0">
-<div class="col-12 d-flex align-items-center justify-content-center pd-0">
-<div class="card dim">
-  <div class="card-content c100">
-    <div class="card-body login-img">
-      <div class="row m-0 c100">
-        <div class="col-lg-5 col-md-12 bg-white px-4 pt-3 wlcustom z9">
-          <div class="koy">
-            <img src="../../../assets/img/gallery/logo.png" alt="" class="loginlogo">
-            <h4 class="mb-2 card-title wlcb">Welcome Back!</h4>
-            <p class="card-text mb-3 wlcmini">
-              To keep you connected, please sign in below with your personal information.
-            </p>
-            <form #form="ngForm" (submit)="loginUser()" name="form">
+    <div>
+        <!--Login Page Starts-->
+        <section id="login">
+            <div class="container-fluid pd-0">
+                <div class="row full-height-vh m-0">
+                    <div class="col-12 d-flex align-items-center justify-content-center pd-0">
+                        <div class="card dim">
+                            <div class="card-content c100">
+                                <div class="card-body login-img">
+                                    <div class="row m-0 c100">
+                                        <div class="col-lg-5 col-md-12 bg-white px-4 pt-3 wlcustom z9">
+                                            <div class="koy">
+                                                <img src="../../../assets/img/gallery/logo.png" alt="" class="loginlogo">
+                                                <h4 class="mb-2 card-title wlcb"><span>Nigeria @60</span>Welcome Back!</h4>
+                                                <p class="card-text mb-3 wlcmini">
+                                                    To keep you connected, please sign in below with your personal information.
+                                                </p>
+                                                <form #form="ngForm" (submit)="loginUser()" name="form">
 
-            <div class="d-flex-f">
-              <img src="../../../assets/img/gallery/email.svg" class="loginico">
-              <input type="text" [(ngModel)]="obj.username" name="username" class="fctr" placeholder="Username" />
-          </div>
+                                                    <div class="d-flex-f">
+                                                        <img src="../../../assets/img/gallery/email.svg" class="loginico">
+                                                        <input type="text" [(ngModel)]="obj.username" name="username" class="fctr" placeholder="Username" />
+                                                    </div>
 
-          <div class="d-flex-f2">
-              <img src="../../../assets/img/gallery/password.svg" class="loginico">
-              <input type="password" class="fctr" id="user-password" placeholder="Password" [(ngModel)]="obj.password" name="password" required>
-            </div>
-            <div class="d-flex justify-content-between mt-2">
-              <div class="remember-me">
-                <div class="custom-control custom-checkbox custom-control-inline mb-3">
-                  <input type="checkbox" id="customCheckboxInline1" name="customCheckboxInline1" class="custom-control-input" />
-                  <label class="custom-control-label" for="customCheckboxInline1">
+                                                    <div class="d-flex-f2">
+                                                        <img src="../../../assets/img/gallery/password.svg" class="loginico">
+                                                        <input type="password" class="fctr" id="user-password" placeholder="Password" [(ngModel)]="obj.password" name="password" required>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between mt-2">
+                                                        <div class="remember-me">
+                                                            <div class="custom-control custom-checkbox custom-control-inline mb-3">
+                                                                <input type="checkbox" id="customCheckboxInline1" name="customCheckboxInline1" class="custom-control-input" />
+                                                                <label class="custom-control-label" for="customCheckboxInline1">
                     Remember Me
                   </label>
-                </div>
-              </div>
-              <div class="forgot-password-option">
-                <a href="#/forgot-password" class="text-decoration-none text-primary">Forgot Password
+                                                            </div>
+                                                        </div>
+                                                        <div class="forgot-password-option">
+                                                            <a href="#/forgot-password" class="text-decoration-none text-primary">Forgot Password
                   ?</a>
-              </div>
-            </div>
-            <div class="fg-actions d-flex justify-content-between">
-              
-              <div class="recover-pass w-100">
-                <button class="btn btn-primary2 w-90" md-ink-ripple type="submit" [disabled]="form.invalid">
+                                                        </div>
+                                                    </div>
+                                                    <div class="fg-actions d-flex justify-content-between">
+
+                                                        <div class="recover-pass w-100">
+                                                            <button class="btn btn-primary2 w-90" md-ink-ripple type="submit" [disabled]="form.invalid">
                   Sign In
                 </button>
-              </div>
+                                                        </div>
 
-              <!-- <div class="login-btn w-100">
+                                                        <!-- <div class="login-btn w-100">
                 <button class="btn btn-secondary2 w-100">
                 Employee Dashboard
                 </button>
               </div> -->
-            </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-lg-7 d-lg-block d-none align-middle pd-0 dtop">
-            <video loop muted autoplay class="w-100">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 d-lg-block d-none align-middle pd-0 dtop">
+                                            <video loop muted autoplay class="w-100">
 
               <source src="../../../assets/img/gallery/team.mp4" type="video/mp4">
               <!-- <source src="http://77.104.159.162/~teamgrou/wp-content/uploads/2019/01/Team-Opener-Final.mp4" type="video/mp4"> -->
             </video>
-            
-            <div class="content">
-              <!-- <h1><img src="../../../assets/img/logo.png" alt="" class="loginlogo"></h1> -->
-              <p class="loginf">Engineering, Architecture & Planning Services<br>for Clients Worldwide</p>
-              <a href="https://teamgroup.it/" target="_blank"><button class="btn btn-primary2">Learn more</button></a>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!--Login Page Ends-->
 
-  </div>
+                                            <div class="content">
+                                                <!-- <h1><img src="../../../assets/img/logo.png" alt="" class="loginlogo"></h1> -->
+                                                <p class="loginf">Engineering, Architecture & Planning Services<br>for Clients Worldwide</p>
+                                                <a href="https://teamgroup.it/" target="_blank"><button class="btn btn-primary2">Learn more</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Login Page Ends-->
+
+    </div>
 </div>
